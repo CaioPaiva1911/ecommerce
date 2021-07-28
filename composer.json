@@ -1,5 +1,5 @@
 {
-    "name":"CaioPaiva1911/ecommerce",
+    "name":"caiopaiva1911/ecommerce",
     "authors": [
         {
             "name": "Caio Paiva",
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\CaioPaiva1911\\php-classes\\src"
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
         }
     }
 }
