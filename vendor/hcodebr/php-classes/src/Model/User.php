@@ -325,7 +325,7 @@ class User extends Model{
 
     public static function getErrorRegister()
     {
-        $msg = (issset($_SESSION[User::ERROR_REGISTER]) && $_SESSION[User::ERROR_REGISTER]) ? $_SESSION[User::ERROR_REGISTER] : '';
+        $msg = (isset($_SESSION[User::ERROR_REGISTER]) && $_SESSION[User::ERROR_REGISTER]) ? $_SESSION[User::ERROR_REGISTER] : '';
 
         User::clearErrorRegister();
 
@@ -350,7 +350,7 @@ class User extends Model{
 
     public static function getPasswordHash($password)
     {
-        return pasword_hash($password, PASSWORD_DEFAULT, [
+        return password_hash($password, PASSWORD_DEFAULT, [
             'cost'=>12
         ]);
     }
