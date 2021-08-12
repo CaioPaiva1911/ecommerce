@@ -235,7 +235,7 @@ $app->post("/checkout", function(){
 
 	$cart = Cart::getFromSession();
 
-	$totals = $cart->ferCalculateTotal();
+	$totals = $cart->getCalculateTotal();
 
 	$order =  new Order();
 
