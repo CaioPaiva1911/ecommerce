@@ -90,7 +90,7 @@
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href="/cart">Carrinho - <span class="cart-amunt">R$<?php echo getCartVlSubTotal(); ?></span> 
+                        <a href="/cart">Carrinho - <span class="cart-amunt">R$<?php if( !getCartVlSubTotal() > 0 ){ ?><?php }else{ ?><?php echo getCartVlSubTotal(); ?><?php } ?></span> 
                             <i class="fa fa-shopping-cart"></i> <span class="product-count"><?php echo getCartNrQtd(); ?></span></a>
                     </div>
                 </div>
